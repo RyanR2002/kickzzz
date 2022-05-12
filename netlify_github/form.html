@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KICKZZZ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#top").load("_top.html");
+        $("#bottom").load("_bottom.html");
+      });
+    </script>
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- content goes here-->
+
+    <!-- volunteer form-->
+    <div class="webform">
+      <h1>Shoe Model Registration Form</h1>
+
+      <form
+        name="webform_github"
+        enctype="multipart/form-data"
+        class="needs-validation"
+        novalidate
+        data-netlify="true"
+      >
+        <!--full name - text field-->
+        <div>
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="full_name"
+            id="full-name"
+            required
+            class="form-control"
+          />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Input Full Name</div>
+        </div>
+
+        <!--age - number feild-->
+        <div>
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="16"
+            max="120"
+            required
+            class="form-control"
+          />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Input Valid Age</div>
+        </div>
+
+        <!--t-shirt - drop down menu-->
+        <div>
+          <label for="t-shirt">T-Shirt Size</label>
+          <select name="t_shirt" id="t-shirt" required class="form-control">
+            <option value="">SELECT SIZE</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="CUSTOM">CUSTOM</option>
+          </select>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Please Choose T-Shirt Size</div>
+          <input
+            type="text"
+            name="custom"
+            placeholder="please type custom size"
+            disabled
+            required
+            class="form-control"
+            id="custom"
+          />
+        </div>
+
+        <!--email - email field-->
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="your_email"
+            id="email"
+            required
+            class="form-control"
+          />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Input Valid Email</div>
+        </div>
+
+        <!--phone - tel field-->
+        <div>
+          <label for="phone">Phone (Optional)</label>
+          <input type="tel" name="phone" id="phone" class="form-control" />
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <!--social media url - url field-->
+        <div>
+          <label for="url">Social Media URL (Optional)</label>
+          <input type="url" name="url" id="url" class="form-control" />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">Please Input a Valid URL</div>
+        </div>
+
+        <!--begin date - date field-->
+        <div>
+          <label for="date">When Can You Begin?</label>
+          <input
+            type="date"
+            name="start_date"
+            id="date"
+            required
+            class="form-control"
+          />
+          <div class="valid-feedback">
+            If no Color Was Picked We Will Use Brand Color
+          </div>
+        </div>
+
+        <!--t shirt color - color field-->
+        <div>
+          <label for="">What T-Shirt Color Would You Prefer</label>
+          <input
+            type="color"
+            name="color"
+            id="color"
+            class="form-control form-control-color"
+          />
+        </div>
+
+        <!--time of day - checkboxes-->
+        <div class="form-check form-group">
+          <strong>Time of day</strong><br />
+          <input
+            type="checkbox"
+            name="time_of_day"
+            id="time-of-day-morning"
+            required
+            class="form-check-input checkbox"
+          />
+          <label for="time-of-day-morning">Morning</label><br />
+
+          <input
+            type="checkbox"
+            name="time_of_day"
+            id="time-of-day-afternoon"
+            required
+            class="form-check-input checkbox"
+          />
+          <label for="time-of-day-afternoon">Afternoon</label><br />
+
+          <input
+            type="checkbox"
+            name="time_of_day"
+            id="time-of-day-evening"
+            required
+            class="form-check-input checkbox"
+          />
+          <label for="time-of-day-evening">Evening</label>
+        </div>
+
+        <!--veteran - radio buttons-->
+        <div>
+          <strong>Are You a US Veteran</strong><br />
+          <input
+            type="radio"
+            name="veteran"
+            id="veteran-no"
+            value="No"
+            requied
+            class="form-check-input radio"
+          />
+          <label for="veteran-yes">Yes</label>
+
+          <input
+            type="radio"
+            name="veteran"
+            id="veteran-no"
+            value="No"
+            requied
+            class="form-check-input radio"
+          />
+          <label for="veteran-no">No</label>
+        </div>
+
+        <!--background check - upload field-->
+        <div>
+          <label for="file">Background Check</label>
+          <input
+            type="file"
+            name="file"
+            id="file"
+            accept=".pdf,.docx"
+            required
+            class="form-control"
+          />
+          <div class="valid-feedback">Looks Good</div>
+          <div class="invalid-feedback">This Field Is Required</div>
+        </div>
+
+        <!--comments - text area-->
+        <div>
+          <label for="about-you">Tell Us About You (Optional)</label><br />
+          <textarea
+            name="about_you"
+            id="about-you"
+            cols="50%"
+            rows="7"
+            class="form-control"
+          ></textarea>
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <!--terms and conditions - checkbox-->
+        <div class="form-check form-switch">
+          <input
+            type="checkbox"
+            id="terms-and-conditions"
+            name="terms"
+            value="Yes"
+            required
+            class="form-check-input"
+          />
+          <label for="terms-and-conditions"
+            >I Accept The Terms And Conditions</label
+          >
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+
+        <!--submit button - button field-->
+        <div>
+          <input
+            type="submit"
+            name="submit"
+            value="Volunteer Now"
+            class="submit btn btn-outline-primary"
+          />
+        </div>
+      </form>
+    </div>
+    <!--end volunteer form-->
+
+    <!-- content goes here-->
+    <div id="bottom"></div>
+
+    <script src="js/form.js"></script>
+  </body>
+</html>

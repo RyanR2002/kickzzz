@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta author="UnlhbiBSb2JlcnRzb24gLSAwMi0yNy0yMDIyIDM6NDVBTQ==" />
+    <title>KICKZZZ</title>
+<!-- Week 9 - UnlhbiBSb2JlcnRzb24gLSBXZWVrIDkgLSA0LzcvMjIgLSA1OjM1-->
+<!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+ 
+
+
+    <!-- Google Fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google icons CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+     <!-- AOS CSS CDN -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+     <!-- AOS JS CDN -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- fancy app CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- fancy app JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+ 
+ <!-- Styles.css -->
+ <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+<!-- google icons-->
+<div class="container top-logo text-center">
+  <div class="row">
+    <div class="col-12 col-md-6">    
+     <!--GOOGLE FONT ICONS GO HERE--> 
+     <span class="material-icons-outlined material-icon md-60">
+      <a  class="sidebar-icon" href="gallery.html">photo_camera</a>
+      </span>
+   <span class="material-icons-outlined material-icon md-60">
+      <a
+    data-bs-toggle="offcanvas"
+    href="#offcanvasExample"
+    role="button"
+    aria-controls="offcanvasExample"
+    class="sidebar-icon"
+  >
+    menu
+    </a
+      </span>
+  </div>
+      <div class="col-12 col-md-6">
+  KICKZZZ
+  </div>
+</div>
+</div>
+<!--end google icons-->
+
+
+
+  
+
+     <!-- begin navbar-->
+     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler .custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Volunteer Form</a>
+              </li>
+
+
+              <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+            <!--
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar-->
+
+    <!-- begin carousel-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/carousel/1.jpg"
+            class="d-block w-100"
+            alt="We pride ourselves in authenticity"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Authentic Kickzzz</h5>
+            <p>We pride ourselves in authenticity.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/2.jpg"
+            class="d-block w-100"
+            alt="Some representative placeholder content for the second slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Comfy and Affordable</h5>
+            <p>Get the most bang for your buck!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/3.jpg"
+            class="d-block w-100"
+          </div>
+          alt="third image placeholder"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sleek and Stylish</h5>
+            <p>The cleanest and Freshest on the Market!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+    <iframe src="https://www.youtube.com/embed/JkeOZktBYwk" title="Youtube Video" allowfullscreen>
+    
+    </iframe>
+    </div>
+    <!-- end carousel -->
+
+
+
+
+
+
+
+
+
+
+  <!--Font awsome row begin-->
+  <div class="container-fluid text-center fa-row">
+    
+    <div class="row">
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-circle-info fa-row-icon"></i><br />
+      <a href="#">Info</a>
+    </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-basketball fa-row-icon"></i><br />
+        <a href="#">Sports Shoes</a>
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-socks fa-row-icon"></i><br />
+        <a href="#">Socks</a>
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-tag fa-row-icon"></i><br />
+        <a href="#">Clothing</a>
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-person-running fa-row-icon"></i><br />
+        <a href="#">Running Shoes</a>
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"><i class="fa-solid fa-shoe-prints fa-row-icon"></i><br />
+        <a href="#">Everyday Shoes</a>
+      </div>
+
+    </div>
+   </div>
+  <!--Font awsome row end-->
+  
+  
+  <!--first description section begins-->
+  <div class="container volunteer-div google-font" data-aos="fade-up">
+    <div class="row">
+      <div class="col">
+
+        <img 
+        src="/images/general/volunteer.jpg" 
+        class="img-responsive volunteer-img"
+        alt="Volunteer oprotunities" 
+        />
+       
+        <h2>Volunteer Opportunities</h2>
+        <p>Here at KICKZZZ we are always looking for volunteers to model for our products. We can provide you an outlet to start yourself out in the modeling business or even compensate you depending how you want to work for us.</p>
+        
+        <p>We have a couple of jobs you can apply for in our schedule tab. The main job would be the shoe model. You would come in and take photos modeling the shoes to put on our website (See the carousel above) or modeling the clothing we sell in the store
+       
+        <p>Please contact our store via email or phone call to setup an appointment or apply online using the Volunteer form under the Schedule tab</p>
+      <div>
+      <a href="form.html" class="btn btn-outline-primary btn-volunteer">Volunteer Now</a>
+      </div>
+
+     </div>      
+  </div>
+</div>
+  
+
+  
+  
+  
+  <!--first description section ends-->
+  
+  <!--Gallery begins-->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">  
+        
+        
+        <a data-fancybox href="/images/fancybox/originals/1.jpg">
+        <img 
+        src="/images/fancybox/thumbs/1.jpg" 
+        class="img-responsive img-fancybox"
+        alt="Four white and red shoes"
+        data-aos="flip-left" 
+        />
+        </a>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">  
+        
+        <a data-fancybox href="/images/fancybox/originals/2.jpg">
+        <img 
+        src="/images/fancybox/thumbs/2.jpg" 
+        class="img-responsive img-fancybox"
+        alt="Shoe floating"
+        data-aos="flip-left" 
+        />
+        </a>
+
+      </div>
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">  
+        
+        <a data-fancybox href="/images/fancybox/originals/3.jpg">
+        <img 
+        src="/images/fancybox/thumbs/3.jpg" 
+        class="img-responsive img-fancybox"
+        alt="White tennis shoes"
+        data-aos="flip-left" 
+        />
+        </a>
+
+      </div>
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">  
+        
+        <a data-fancybox href="/images/fancybox/originals/4.jpg">
+        <img 
+        src="/images/fancybox/thumbs/4.jpg" 
+        class="img-responsive img-fancybox"
+        alt="converse"
+        data-aos="flip-left" 
+        />
+        </a>
+      
+      </div>
+    </div>
+    
+<div class="row gallery-button">
+<div class="col-12 text-center">
+<a href="gallery.html" class="btn btn-outline-primary btn-gallery"
+>View Gallery</a>
+</div>
+</div>
+
+
+  </div>
+  <!--Gallery ends-->
+  
+  
+  <!--Second description section begins-->
+  <div class="container contact-div google-font" data-aos="fade-up">
+    <div class="row">
+      <div class="col">
+
+          <img 
+        src="/images/general/contact.jpg" 
+        class="img-responsive contact-img"
+        alt="Contact Our Store" 
+        />
+       
+        <h2>Contact Our Store</h2>
+        <p>If you run into any issues or have any questions about the store you can email us at KICKZZZ@gmail.com or @ us on social Media @KICKZZZOfficial
+        <p>Our hard workers are ready to answer any and all of your concerns no matter the issue!<p>
+          <p>
+          <strong>Socials - @KICKZZZOfficial</strong>
+          </p>
+          <p>
+          <strong>Email - KICKZZZ@gmail.com</strong>    
+          </p>
+        <p>
+      <strong>Phone # - 832-895-4673</strong>
+
+        <div>
+
+        </div>
+        <a href="#footerinfo" class="btn btn-outline-primary btn-contact"
+        >Contact</a>
+      </div>
+    </div>
+  </div>
+    
+  <!--Second description section ends-->
+  
+  <!--Members begins-->
+  <div class="container text-center staff" id="staff">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">  <img 
+          src="/images/staff/thumbs/1.jpg" 
+          alt="John Davis"
+          class="cropped"
+          data-aos="zoom-in" 
+          />
+        <br />
+       <blockquote>
+         My employees are a joy to be around and some hard workers!
+         <cite>Jeff Brazos</cite>
+       </blockquote> 
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">  <img 
+          src="/images/staff/thumbs/2.jpg" 
+          alt="Miguel Fring" 
+          class="cropped"
+          data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            I love to meet new people while working here
+            <cite>Samuel White</cite>
+          </blockquote> 
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">  <img 
+          src="/images/staff/thumbs/3.jpg" 
+          alt="Walt Mcneil"
+          class="cropped"
+          data-aos="zoom-in" 
+          />
+          <br />
+          <blockquote>
+            Its always a good day working with the fun people here at KICKZZZ!
+            <cite>Bruce Wayne</cite>
+          </blockquote> 
+        </div>
+      </div>
+      </div>
+  </div>
+  <!--Members ends-->
+  
+  
+    <!--Footer row begin-->
+<div class="container-fluid text-center footer-row" id="FooterInfo">
+    
+  <div class="row">
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Clothing</div></a>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Sports Shoes</div></a>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Socks</div></a>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Everyday Shoes</div></a>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Info</div></a>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <a href="#">Running Shoes</div></a>
+  </div>
+
+<hr />  
+<div class="row text-center">
+<div class="col-12">
+
+  <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-social-media"></i></a>
+  <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-social-media"></i></a>
+  <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-social-media"></i></a>
+
+</div>
+</div>
+
+
+</div>
+ <!--Footer row end-->
+
+
+
+
+  <!-- Begin left offcanvas -->
+    
+
+  <div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">KICKZZZ</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="text-center">
+      <div class="spokesperson">
+          <img src="/images/general/spokesperson.jpg" class="cropped-offcanvas" alt="Spokesperson" />
+      </div>
+        <br />
+        <blockquote>
+          Thank you Scott for going out of your way to get me the shoes I needed
+
+          <cite>Dwayne Rockington</cite>
+        </blockquote>
+
+
+     
+
+
+      <a class="btn btn-outline-primary btn-offcanvas-left" href="gallery.html">Gallery1</a>
+      <a class="btn btn-outline-primary btn-offcanvas-left" href="form.html">Modeling</a>
+      <a class="btn btn-outline-primary btn-offcanvas-left" href="schedule.html">Schedule</a>
+
+
+
+
+
+   
+  </div>
+  </div>
+</div>
+<!-- End left offcanvas -->
+
+
+
+
+
+
+<script src="/js/scripts.js"></script>
+  </body>
+</html>
